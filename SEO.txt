@@ -1,0 +1,24 @@
+Buenas Practicas SEO
+
+1- Verifique que el idioma sea español en todas las paginas
+<html lang="es">
+
+2- Aplique las siguientes palabras claves
+	index: "electricidad, refrigeracion, tecnico, reparacion, electricista, aire acondicionado, urgencias, mantenimiento, gaston cacharelli, carlos paz"
+	galeria: "electricidad, refrigeracion, tecnico, aire acondicionado, iluminacion, tienda, hotel, consecionario, salon de belleza, tuberia"
+	presupuesto: "electricidad, refrigeracion, tecnico, aire acondicionado, iluminacion, presupuesto gratuito, contacto, urgencias, sin costo"
+	sobreNosotros: "quienes somos, preguntas frecuentes, trabaja con nosotros, costo, garantia, equipo, electricidad, refrigeracion, cv, curriculum"
+
+3- Aplique la siguiente descripcion
+	index: "Electricista matriculado en Villa Carlos Paz. Contactenos y obtenga un presupuesto sin costo. Urgencias al: 0123456789. Electricidad, refrigeracion, mantenimiento, iluminacion exterior e interior, aires acondicionado. No sufrira tarifas ocultas, somos transparentes en todo momento"
+	galeria:"Galería con muestra de algunos de nuestro trabajos realizado para diferentes clientes. Instalación eléctrica en hotel, iluminación en piscina, tubería eléctrica, instalación de aire acondicionado, iluminación  concesionario, iluminación salón"
+	presupuesto: "Formulario para solicitar un presupuesto gratuito, con los siguientes campos a completar: Nombre y apellido, correo electrónico, teléfono de contacto, descripción u observaciones, la pagina incluye teléfono para emergencias"
+	sobreNosotros: "Sección con información sobre la empresa, el personal que la conforma, la misión y la visión de la misma. Preguntas frecuentes de nuestros clientes; información de los beneficios de trabajar con nosotros y correo de contacto para enviar CV"
+4- Coloque titulo a cada seccion. 
+	Ejemplo: Electricidad | Galeria
+
+5- Organize los titulos por orden de jerarquia
+
+6- Verifique que sea compatible con version movil
+
+7- Hice mapa del sitio
