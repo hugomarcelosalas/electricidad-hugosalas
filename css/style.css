@@ -1,0 +1,310 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.grilla .section1 .section1__textoPresentacion h2, .grilla .section4 .galeria h2, .footer div h3 {
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.grilla .section2 .section2_texto h2, .grilla .section3 h2, .footer div h4 {
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-weight: bold; }
+
+.grilla .section1 .section1__textoPresentacion p, .grilla .section2 .section2_texto p, .grilla .section3 p {
+  font-family: sans-serif;
+  line-height: 1.5; }
+
+.header .nav li a {
+  font-family: sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fa9209;
+  margin: 10px;
+  line-height: 1.5; }
+
+h1 {
+  font-size: 4rem; }
+
+h2 {
+  font-size: 2.5rem; }
+
+h3 {
+  font-size: 2.2rem; }
+
+h4 {
+  font-size: 1.8rem; }
+
+p {
+  font-size: 1.6rem; }
+
+.grilla-galeria {
+  margin: 10px; }
+
+.fixed {
+  position: fixed;
+  right: 40px;
+  z-index: 1;
+  bottom: 20px;
+  font-size: 2em;
+  color: #fa9209; }
+
+.header a {
+  text-decoration: none; }
+
+.grilla {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+  grid-template-areas: "header header header header" "section1 section1 section1 section1" "section1 section1 section1 section1" "section2 section2 section2 section2" "section2 section2 section2 section2" "section3 section3 section3 section3" "section3 section3 section3 section3" "section4 section4 section4 section4" "section4 section4 section4 section4" "footer footer footer footer"; }
+  .grilla .section1 {
+    grid-area: section1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: linear-gradient(to right, #1b4c5e, #a9c4ce); }
+    .grilla .section1 .section1__imagenes {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+    .grilla .section1 .section1__textoPresentacion {
+      width: 80vw;
+      text-align: center;
+      margin: 20px auto;
+      padding: 15px;
+      border: solid black 2px; }
+  .grilla .section2 {
+    grid-area: section2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    background: linear-gradient(to right, #1b4c5e, #a9c4ce); }
+    .grilla .section2 .section2_texto {
+      width: 700px;
+      border: solid 2px black;
+      margin: 10px;
+      padding: 10px; }
+    .grilla .section2 img {
+      width: 700px; }
+  .grilla .section3 {
+    grid-area: section3;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(to right, #1b4c5e, #a9c4ce); }
+    .grilla .section3 .section3_texto {
+      width: 700px;
+      border: solid 2px black;
+      margin: 10px;
+      padding: 10px; }
+    .grilla .section3 img {
+      width: 700px; }
+  .grilla .section4 {
+    grid-area: section4;
+    background: linear-gradient(to right, #1b4c5e, #a9c4ce); }
+    .grilla .section4 .galeria {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: url("../img/proyectos.jpg") no-repeat 50% 50%;
+      background-size: cover; }
+      .grilla .section4 .galeria h2 {
+        color: white;
+        margin: 20px; }
+      .grilla .section4 .galeria a {
+        border-radius: 9px;
+        text-decoration: none;
+        color: #f9f3f4;
+        background-color: gray;
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border: 3px solid;
+        padding: 7px 13px; }
+      .grilla .section4 .galeria a:hover {
+        background-image: linear-gradient(to right, black, gray); }
+
+.fixed:hover {
+  background-color: black; }
+
+/* MEDIA QUERYS */
+/* ESTRATEGIA MOBILE LAST */
+/* --tamaño mediano Tablet-- */
+@media (max-width: 768px) {
+  .grilla {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto; }
+    .grilla .header .header_logoTitulo {
+      justify-content: center; }
+      .grilla .header .header_logoTitulo .titulo {
+        display: none; }
+    .grilla .section1 .section1__textoPresentacion {
+      width: 700px; }
+    .grilla .section1 .section1__imagenes img {
+      width: 175px; }
+    .grilla .section2 {
+      flex-direction: column;
+      text-align: center; }
+      .grilla .section2 .imagen_electricidad {
+        display: none; }
+    .grilla .section3 {
+      flex-direction: column-reverse;
+      padding: 10px;
+      text-align: center; }
+      .grilla .section3 img {
+        display: none; }
+      .grilla .section3 h2 {
+        text-align: center; }
+    .grilla .section4 {
+      height: 50vh; } }
+
+/* --tamaño chico Movil-- */
+@media (max-width: 425px) {
+  .grilla .header {
+    flex-direction: column;
+    height: 55vh; }
+    .grilla .header .nav {
+      padding: 20px; } }
+
+.grilla_presupuesto {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 0.3fr;
+  grid-template-areas: "header header header header" "section_presupuesto section_presupuesto section_presupuesto section_presupuesto" "section_presupuesto section_presupuesto section_presupuesto section_presupuesto"    "footer footer footer footer"; }
+
+.section_presupuesto {
+  grid-area: section_presupuesto;
+  height: 80vh;
+  background-image: url("../img/callcenter.jpg");
+  background-size: cover;
+  padding: 40px; }
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 20px; }
+
+.formulario input {
+  width: 450px;
+  margin: 20px;
+  height: 40px; }
+
+.formulario textarea {
+  width: 450px;
+  margin: 20px;
+  height: 120px; }
+
+.section_presupuesto h3 {
+  font-size: 40px;
+  margin-left: 20px; }
+
+.section_presupuesto p {
+  font-size: 20px;
+  padding: 20px; }
+
+/* --tamaño mediano Tablet-- */
+@media (max-width: 760px) {
+  .grilla_presupuesto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1fr 1fr 0.3fr; } }
+
+/* --tamaño chico Movil-- */
+@media (max-width: 425px) {
+  .section_presupuesto {
+    grid-area: section_presupuesto;
+    height: 70vh;
+    background-image: url("../img/callcenter.jpg");
+    background-size: cover;
+    padding: 40px; }
+    .section_presupuesto .formulario {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px; }
+      .section_presupuesto .formulario input {
+        width: 350px; }
+      .section_presupuesto .formulario textarea {
+        width: 350px; }
+    .section_presupuesto h3 {
+      font-size: 30px; } }
+
+.seccion_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px; }
+
+.seccion1_texto {
+  max-width: 800px;
+  border: solid 3px;
+  padding: 20px;
+  margin: 10px; }
+
+.accordion {
+  margin: 40px; }
+
+.seccion_3 {
+  margin: 40px; }
+
+/* --tamaño mediano Tablet-- */
+@media (max-width: 760px) {
+  .seccion_1 {
+    flex-direction: column; }
+    .seccion_1 img {
+      width: 80%;
+      padding: 20px; } }
+
+.header {
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  background-color: #C6DABF; }
+  .header .header_logoTitulo {
+    display: flex;
+    flex-direction: row; }
+    .header .header_logoTitulo .titulo {
+      text-align: center;
+      margin-top: 40px; }
+    .header .header_logoTitulo .titulo h1 {
+      font-family: sans-serif;
+      font-size: 4rem;
+      font-weight: bold; }
+    .header .header_logoTitulo .titulo h3 {
+      font-family: sans-serif;
+      font-size: 2.3rem; }
+  .header .nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    list-style: none; }
+    .header .nav li a:hover {
+      color: white; }
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #C6DABF; }
+  .footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .footer p {
+    font-size: 1.3rem;
+    padding-top: 30px; }

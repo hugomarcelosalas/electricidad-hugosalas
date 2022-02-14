@@ -1,0 +1,18 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+//VARIABLES
+@import './variables/tamanios';
+@import './variables/colores';
+@import './variables/extend';
+@import './variables/maps';
+
+//SECCIONES
+@import './secciones/galeria';
+@import './secciones/index';
+@import './secciones/presupuesto';
+@import './secciones/sobreNosotros';
+@import './secciones/header';
+@import './secciones/footer';
+

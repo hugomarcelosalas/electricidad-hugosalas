@@ -1,0 +1,42 @@
+.header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    background-color: $verdeHeader;
+
+    .header_logoTitulo {
+        display: flex;
+        flex-direction: row;
+        .titulo {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .titulo h1 {
+            font-family: sans-serif;
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        .titulo h3{
+            font-family: sans-serif;
+            font-size: 2.3rem;
+        }   
+    } 
+    .nav {    
+        display: flex;
+        justify-content: flex-end;
+        background-color: $negro;  
+        list-style: none; 
+        li {
+            a{
+               @extend %estiloNav;
+            }
+            a:hover{
+                color: $blanco;
+                
+            }  
+
+        }       
+        
+    }
+     
+}
