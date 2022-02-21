@@ -3,7 +3,7 @@ $fontSizes: (
     h2: 2.5rem,
     h3: 2.2rem,
     h4: 1.8rem,
-    p: 1.6rem,
+    p: 1.5,
 );
 
 @each $etiqueta, $tamanioLetras in $fontSizes{

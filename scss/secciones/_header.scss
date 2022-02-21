@@ -3,40 +3,54 @@
     display: flex;
     flex-direction: column;
     background-color: $verdeHeader;
-
+  
     .header_logoTitulo {
-        display: flex;
-        flex-direction: row;
-        .titulo {
-            text-align: center;
-            margin-top: 40px;
+      display: flex;
+      flex-direction: row;
+      .titulo {
+        text-align: center;
+        margin-top: 40px;
+        h1 {
+          font-family: sans-serif;
+          font-size: 4rem;
+          font-weight: bold;
         }
-        .titulo h1 {
-            font-family: sans-serif;
-            font-size: 4rem;
-            font-weight: bold;
+        h3 {
+          font-family: sans-serif;
+          font-size: 2.3rem;
         }
-        .titulo h3{
-            font-family: sans-serif;
-            font-size: 2.3rem;
-        }   
-    } 
-    .nav {    
-        display: flex;
-        justify-content: flex-end;
-        background-color: $negro;  
-        list-style: none; 
-        li {
-            a{
-               @extend %estiloNav;
-            }
-            a:hover{
-                color: $blanco;
-                
-            }  
-
-        }       
-        
+      }
     }
-     
-}
+    .nav {
+      display: flex;
+      justify-content: flex-end;
+      background-color: $negro;
+      list-style: none;
+      li {
+        a {
+          text-decoration: none;
+          @extend %estiloNav;
+        }
+        a:hover {
+          color: $blanco;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      height: 55vh;
+      .header_logoTitulo {
+        justify-content: center;
+        .titulo {
+          display: none;
+        }
+      }
+      .nav {
+        padding: 20px;
+      }
+    }
+  }
+  

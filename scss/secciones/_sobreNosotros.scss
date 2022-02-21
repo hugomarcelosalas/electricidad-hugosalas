@@ -4,13 +4,15 @@
     justify-content: space-around;
     align-items: center;
     margin: 10px;
+    .seccion1_texto{
+    
+        max-width: 800px;
+        border: solid 3px ;
+        padding: 20px;
+        margin: 10px;
+    }
 }
-.seccion1_texto{
-    max-width: 800px;
-    border: solid 3px ;
-    padding: 20px;
-    margin: 10px;
-}
+
 .accordion{
     margin: 40px;
 }
@@ -18,7 +20,7 @@
   margin: 40px;  
 }
 /* --tamaño mediano Tablet-- */
-@media (max-width: 760px){
+@media (max-width: 768px){
     .seccion_1{
         flex-direction: column;  
         img{
