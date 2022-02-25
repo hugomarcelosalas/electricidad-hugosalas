@@ -166,15 +166,7 @@ p {
     .grilla .section4 {
       height: 50vh; } }
 
-.grilla_presupuesto {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 1fr 1fr 0.3fr;
-  grid-template-areas: "header header header header" "section_presupuesto section_presupuesto section_presupuesto section_presupuesto" "section_presupuesto section_presupuesto section_presupuesto section_presupuesto"    "footer footer footer footer"; }
-
 .section_presupuesto {
-  grid-area: section_presupuesto;
-  height: 80vh;
   background-image: url("../img/callcenter.jpg");
   background-size: cover;
   padding: 40px; }
@@ -201,34 +193,22 @@ p {
 
 .section_presupuesto p {
   font-size: 20px;
+  font-weight: bold;
   padding: 20px; }
-
-/* --tamaño mediano Tablet-- */
-@media (max-width: 760px) {
-  .grilla_presupuesto {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.4fr 1fr 1fr 0.3fr; } }
 
 /* --tamaño chico Movil-- */
 @media (max-width: 425px) {
-  .section_presupuesto {
-    grid-area: section_presupuesto;
-    height: 70vh;
-    background-image: url("../img/callcenter.jpg");
-    background-size: cover;
-    padding: 40px; }
-    .section_presupuesto .formulario {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 20px; }
-      .section_presupuesto .formulario input {
-        width: 350px; }
-      .section_presupuesto .formulario textarea {
-        width: 350px; }
-    .section_presupuesto h3 {
-      font-size: 30px; } }
+  .section_presupuesto .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px; }
+    .section_presupuesto .formulario input {
+      width: 350px; }
+    .section_presupuesto .formulario textarea {
+      width: 350px; }
+  .section_presupuesto h3 {
+    font-size: 30px; } }
 
 .seccion_1 {
   display: flex;
