@@ -23,9 +23,24 @@
 @media (max-width: 768px){
     .seccion_1{
         flex-direction: column;  
+        div{
+            h1{
+                font-size: 1.5rem;
+            }
+        }
         img{
             width: 80%;
             padding: 20px;
         }     
+    }
+    .accordion{
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+    .seccion_3{
+        h1{
+            font-size: 1.5rem;
+        }
     }
 }

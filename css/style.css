@@ -252,9 +252,15 @@ p {
 @media (max-width: 768px) {
   .seccion_1 {
     flex-direction: column; }
+    .seccion_1 div h1 {
+      font-size: 1.5rem; }
     .seccion_1 img {
       width: 80%;
-      padding: 20px; } }
+      padding: 20px; }
+  .accordion h1 {
+    font-size: 1.5rem; }
+  .seccion_3 h1 {
+    font-size: 1.5rem; } }
 
 .header {
   grid-area: header;
@@ -309,3 +315,11 @@ p {
     margin: 20px; }
   .footer p {
     font-size: 1.4rem; }
+
+@media (max-width: 768px) {
+  .footer div h3 {
+    font-size: 1.4rem; }
+  .footer div h4 {
+    font-size: 1.1rem; }
+  .footer p {
+    font-size: 0.8rem; } }
