@@ -41,7 +41,8 @@
   @media (max-width: 768px) {
     .header {
       flex-direction: column;
-      height: 55vh;
+      justify-content: space-between;
+      
       .header_logoTitulo {
         justify-content: center;
         .titulo {
@@ -49,8 +50,14 @@
         }
       }
       .nav {
-        padding: 20px;
+        li{
+          a {
+            font-size: 1.4rem;
+          }
+         
+        }
       }
+      
     }
   }
   

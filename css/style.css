@@ -287,13 +287,13 @@ p {
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
-    height: 55vh; }
+    justify-content: space-between; }
     .header .header_logoTitulo {
       justify-content: center; }
       .header .header_logoTitulo .titulo {
         display: none; }
-    .header .nav {
-      padding: 20px; } }
+    .header .nav li a {
+      font-size: 1.4rem; } }
 
 .footer {
   grid-area: footer;
