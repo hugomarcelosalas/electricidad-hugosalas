@@ -1,192 +1,237 @@
 .grilla {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
-    grid-template-areas:
-      "header header header header"
-      "section1 section1 section1 section1"
-      "section1 section1 section1 section1"
-      "section2 section2 section2 section2"
-      "section2 section2 section2 section2"
-      "section3 section3 section3 section3"
-      "section3 section3 section3 section3"
-      "section4 section4 section4 section4"
-      "section4 section4 section4 section4"
-      "footer footer footer footer";
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+  grid-template-areas:
+  "header header header header"
+  "section1 section1 section1 section1"
+  "section1 section1 section1 section1"
+  "section2 section2 section2 section2"
+  "section2 section2 section2 section2"
+  "section3 section3 section3 section3"
+  "section3 section3 section3 section3"
+  "section4 section4 section4 section4"
+  "section4 section4 section4 section4"
+  "footer footer footer footer";
   
-    .fixed {
-      position: fixed;
-      right: 40px;
-      z-index: 1;
-      bottom: 20px;
-      font-size: 2em;
-      color: #fa9209;
-    }
-    span {
-      font-weight: bold;
-    }
+  span {
+  font-weight: bold;
+  }
   
-    .section1 {
-      grid-area: section1;
+  .section1 {
+    grid-area: section1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: linear-gradient(to right, #1b4c5e, #a9c4ce);
+  
+    .section1__imagenes {
       display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      background: linear-gradient(to right, #1b4c5e, #a9c4ce);
-  
-      .section1__imagenes {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-      }
-  
-      .section1__textoPresentacion {
-        width: 80vw;
-        text-align: center;
-        margin: 20px auto;
-        padding: 15px;
-        border: solid black 2px;
-  
-        h2 {
-          @extend %estiloTitulo;
-        }
-        p {
-          @extend %estiloParrafo;
-        }
-      }
+      flex-direction: row;
+      justify-content: center;
     }
   
-    .section2 {
-      grid-area: section2;
-      display: flex;
-      align-items: center;
+    .section1__textoPresentacion {
+      width: 80vw;
       text-align: center;
-      font-size: 20px;
+      margin: 20px auto;
       padding: 15px;
-      background: linear-gradient(to right, #1b4c5e, #a9c4ce);
-      .section2_texto {
-        width: $ancho;
-        border: solid 2px black;
-        margin: 10px;
-        padding: 10px;
-        h2 {
-          @extend %estiloSubtitulo;
-        }
-        p {
-          @extend %estiloParrafo;
-        }
+      border: solid black 2px;
+  
+      h2 {
+      @extend %estiloTitulo;
       }
-      img {
-        width: $ancho;
+      p {
+        @extend %estiloParrafo;
       }
     }
+  }
   
-    .section3 {
-      grid-area: section3;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      padding: 15px;
-      background: linear-gradient(to right, #1b4c5e, #a9c4ce);
-      .section3_texto {
-        width: $ancho;
-        border: solid 2px black;
-        margin: 10px;
-        padding: 10px;
-      }
-  
+  .section2 {
+    grid-area: section2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    background: linear-gradient(to right, #1b4c5e, #a9c4ce);
+    .section2_texto {
+      width: $ancho;
+      border: solid 2px black;
+      margin: 10px;
+      padding: 10px;
       h2 {
         @extend %estiloSubtitulo;
       }
       p {
         @extend %estiloParrafo;
       }
-      img {
+    }
+    img {
+      width: $ancho;
+    }
+  }
+  
+  .section3 {
+    grid-area: section3;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(to right, #1b4c5e, #a9c4ce);
+    .section3_texto {
+      width: $ancho;
+      border: solid 2px black;
+      margin: 10px;
+      padding: 10px;
+    }
+  
+    h2 {
+      @extend %estiloSubtitulo;
+    }
+    p {
+      @extend %estiloParrafo;
+    }
+    img {
+      width: $ancho;
+    }
+  }
+  
+  .section4 {
+    grid-area: section4;
+    background: linear-gradient(to right, #1b4c5e, #a9c4ce);
+    .galeria {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: url("../img/proyectos.jpg") no-repeat 50% 50%;
+      background-size: cover;
+  
+      h2 {
+        @extend %estiloTitulo;
+        color: white;
+        margin: 20px;
+      }
+      a {
+        border-radius: 9px;
+        text-decoration: none;
+        color: #f9f3f4;
+        background-color: gray;
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border: 3px solid;
+        padding: 7px 13px;
+      }
+      a:hover {
+        background-image: linear-gradient(to right, black, gray);
+      }
+    }
+  }
+}
+.fixed:hover {
+  background-color: black;
+}
+  
+/* MEDIA QUERYS */
+/* ESTRATEGIA MOBILE LAST */
+  
+/* --tamaño mediano Tablet-- */
+@media (max-width: 768px) {
+  .grilla {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+      
+    .section1 {
+      .section1__textoPresentacion {
         width: $ancho;
       }
-    }
-  
-    .section4 {
-      grid-area: section4;
-      background: linear-gradient(to right, #1b4c5e, #a9c4ce);
-      .galeria {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background: url("../img/proyectos.jpg") no-repeat 50% 50%;
-        background-size: cover;
-  
-        h2 {
-          @extend %estiloTitulo;
-          color: white;
-          margin: 20px;
-        }
-        a {
-          border-radius: 9px;
-          text-decoration: none;
-          color: #f9f3f4;
-          background-color: gray;
-          font-family: sans-serif;
-          font-size: 1.5rem;
-          font-weight: bold;
-          border: 3px solid;
-          padding: 7px 13px;
-        }
-        a:hover {
-          background-image: linear-gradient(to right, black, gray);
-        }
-      }
-    }
-  }
-  .fixed:hover {
-    background-color: black;
-  }
-  
-  /* MEDIA QUERYS */
-  /* ESTRATEGIA MOBILE LAST */
-  
-  /* --tamaño mediano Tablet-- */
-  @media (max-width: 768px) {
-   .grilla {
-      display: grid;
-      grid-template-columns: auto;
-      grid-template-rows: auto;
-      
-      .section1 {
-        .section1__textoPresentacion {
-          width: $ancho;
-        }
-        .section1__imagenes {
-          img {
-            width: $ancho/4;
-          }
-        }
-      }
-  
-      .section2 {
-        flex-direction: column;
-        text-align: center;
-        .imagen_electricidad {
-          display: none;
-        }
-      }
-  
-      .section3 {
-        flex-direction: column-reverse;
-        padding: 10px;
-        text-align: center;
+      .section1__imagenes {
         img {
-          display: none;
-        }
-        h2 {
-          text-align: center;
+          width: $ancho/4;
         }
       }
-      .section4 {
-        height: 50vh;
+    }
+  
+    .section2 {
+      flex-direction: column;
+      text-align: center;
+      .imagen_electricidad {
+        display: none;
+      }
+    }
+  
+    .section3 {
+      flex-direction: column-reverse;
+      padding: 10px;
+      text-align: center;
+      img {
+        display: none;
+      }
+      h2 {
+        text-align: center;
+      }
+    }
+    .section4 {
+      height: 50vh;
+    }
+  }
+}
+@media (max-width: 425px){
+  .grilla {
+    .section1 {
+      .section1__textoPresentacion {
+        max-width: 400px;
+        h2{
+          font-size: 1.3rem;
+        }
+        p{
+          font-size: 1rem;
+        }
+      }
+      .section1__imagenes {
+        img {
+          max-width: 100px;
+        }
+      }
+    }
+    .section2{
+      .section2_texto{
+        max-width: 400px;
+        h2{
+          font-size: 1.3rem;
+        }
+        p{
+          font-size: 1rem;
+        }
+      }
+    }
+    .section3{
+      .section3_texto{
+        max-width: 400px;
+        h2{
+          font-size: 1.3rem;
+        }
+        p{
+          font-size: 1rem;
+        }
+      }
+    }
+    .section4{
+      .galeria{
+        max-width: 425px;
+        h2{
+          font-size: 1.7rem;
+        }
+        a{
+          font-size: 1.2rem;
+        }
       }
     }
   }
+}
   
