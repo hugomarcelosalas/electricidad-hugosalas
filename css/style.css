@@ -296,7 +296,10 @@ main .seccion_3 {
     flex-direction: column;
     justify-content: space-between; }
     .header .header_logoTitulo {
-      justify-content: center; }
+      justify-content: center;
+      align-items: center; }
+      .header .header_logoTitulo img {
+        height: 80%; }
       .header .header_logoTitulo .titulo {
         display: none; }
     .header .nav li a {

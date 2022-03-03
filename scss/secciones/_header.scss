@@ -45,6 +45,10 @@
       
       .header_logoTitulo {
         justify-content: center;
+        align-items: center;
+        img{
+          height: 80%;
+        }
         .titulo {
           display: none;
         }
