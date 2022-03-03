@@ -185,6 +185,7 @@ p {
     .grilla .section4 .galeria h2 {
       font-size: 1.7rem; }
     .grilla .section4 .galeria a {
+      display: contents;
       font-size: 1.2rem; } }
 
 .section_presupuesto {
@@ -251,16 +252,16 @@ main .seccion_3 {
 
 /* --tamaño mediano Tablet-- */
 @media (max-width: 768px) {
-  .seccion_1 {
+  main .seccion_1 {
     flex-direction: column; }
-    .seccion_1 div h1 {
+    main .seccion_1 div h1 {
       font-size: 1.5rem; }
-    .seccion_1 img {
+    main .seccion_1 img {
       width: 80%;
       padding: 20px; }
-  .accordion h1 {
+  main .accordion h1 {
     font-size: 1.5rem; }
-  .seccion_3 h1 {
+  main .seccion_3 h1 {
     font-size: 1.5rem; } }
 
 .header {
